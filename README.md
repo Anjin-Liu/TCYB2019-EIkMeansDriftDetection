@@ -1,3 +1,4 @@
+
 ## Source Code for EI-kMean Space Partition for Drift Detection
 Hello! This is the python code for EI-kMeans Drift deteciton presented in the paper "Concept Drift Detection via Equal Intensity k-Means Space Partitioning" ([https://arxiv.org/abs/2004.11587](https://arxiv.org/abs/2004.11587))
 
@@ -62,8 +63,9 @@ python EIkMeans_Exp2.py
 ```
 
 ## Detect Concept Drift
+
 Given data batches ```Batch_train``` and ```Batch_test``` and the desired signficance level ```alpha```
-```
+```python
 import EIkMeans_lib as eikm
 
 num_train = Batch_train.shape[0]
@@ -80,6 +82,10 @@ eikm_instance.build_partition(Batch_train, num_test)
 # Performing concept drift detection
 eikm_instance.drift_detection(Batch_test, alpha)
 ```
+### Remark
+
+You may need to perform normalization on your datasets to have a stable drift detection performance.
+
 ## Authors
 
 * **Anjin Liu** Postdoctoral Research Associate, Anjin.Liu@uts.edu.au
