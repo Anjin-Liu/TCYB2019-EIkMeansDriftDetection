@@ -52,7 +52,7 @@ Please go to ```Datasets``` folder and run
 python Exp2_Syn_dataGenerator.py
 
 # Step 2. run this code to generate synthetic data for exp 3
-python Exp2_Syn_dataGenerator.py
+python Exp3_Rea_dataGenerator.py
 ```
 Now you should be able to reproduce the experiment by running the code located under the main folder.
 ```
