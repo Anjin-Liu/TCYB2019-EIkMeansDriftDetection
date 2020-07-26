@@ -44,6 +44,7 @@ matplotlib
 ## Running the tests
 
 To run the test on the given datasets you need to generate data samples from their original datasets.
+Please go to ```Datasets``` folder and run
 
 ```
 # Step 1. run this code to generate synthetic data for exp 2
@@ -52,7 +53,7 @@ python Exp2_Syn_dataGenerator.py
 # Step 2. run this code to generate synthetic data for exp 3
 python Exp2_Syn_dataGenerator.py
 ```
-Now you should be able to reproduce the experiment by runing located under the main folder.
+Now you should be able to reproduce the experiment by running the code located under the main folder.
 ```
 python kMeansChi2_Exp3.py
 python kMeansChi2_Exp2.py
